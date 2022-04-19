@@ -128,5 +128,5 @@ function quizTimer () {
 }
 
 
-buttonEl.addEventListener("click");
-quizItemEl.addEventListener("click");
+buttonEl.addEventListener("click", quizStart);
+quizItemEl.addEventListener("click", questionChoice);
