@@ -17,20 +17,20 @@ a {
   justify-content: space-between;
 }
 
-.game-body {
+.game-intro {
   width: 60%;
   margin: 0 auto;
   border: 6px double #9e4244;
   border-radius: 5px;
 }
 
-.game-body h1 {
+.game-intro h1 {
   font-weight: bold;
   text-align: center;
   font-size: 30px;
 }
 
-.game-body p {
+.game-intro p {
   font-size: 20px;
   text-align: justify;
   width: 60%;
