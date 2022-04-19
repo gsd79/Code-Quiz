@@ -37,6 +37,17 @@ a {
   margin: 0 auto;
 }
 
+/* TODO: fix centering issue here */
+.btn {
+  margin-top: 20px;
+  margin-left: 400px;
+  font: 20px comfortaa;
+  text-align: justify;
+  background: #fc4c4e;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
 .game-body ol {
   list-style-position: inside;
 }
@@ -53,13 +64,3 @@ a {
   width: max-content;
 }
 
-.btn {
-  margin-top: 20px;
-  margin-left: 400px;
-  font: 20px comfortaa;
-  text-align: justify;
-  background: #fc4c4e;
-  border-radius: 10px;
-  border: none;
-  color: white;
-}

@@ -110,17 +110,26 @@ var quizQuestions = [
     },
 ]
 
-quizItemEl.textContent="hello";
 
-function quizStart () {
+
+function quizStart () { 
+    // TODO: find a way to implement questions and answers and timer start
     function getQuestions(){}
-    function questionChoice(){}
+    function questionChoice(){
+     // TODO: generate right and wrong answers, validate correct
+    }
 }
 
-function quizStop(){}
+function quizStop(){
+    // TODO: what happens when quiz ends?
+    // localstorage option, initials and score. score = time remaining on timer if any
+    // 
+}
 
 function quizTimer () {
     timerEl.textContent = "Time:" + time;
+
+    // TODO: subtract time if incorrect answer
 
     if (time <= 0) {
         quizStop();
