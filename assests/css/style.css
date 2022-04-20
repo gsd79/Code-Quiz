@@ -22,11 +22,12 @@ a {
 }
 
 #game-intro, #game-body, #score-body {
-  width: 60%;
-  
+  width: 60%;  
   margin: 0 auto;
   border: 6px double #9e4244;
   border-radius: 5px;
+  text-align: center;
+  
 }
 
 #game-intro h1 {
@@ -44,8 +45,8 @@ a {
 
 /* TODO: fix centering issue here */
 .btn {
-  margin-top: 20px;
-  margin-left: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
   font: 20px comfortaa;
   text-align: justify;
   background: #fc4c4e;
@@ -64,5 +65,16 @@ a {
   color: white;
   width: max-content;
   margin: 5px 0px;
+  list-style: none;
 }
 
+#score-save {
+  color: #fda4ba;
+  width:max-content;
+}
+
+.score-flex{
+  display: flex;
+  
+  align-items: center;
+}

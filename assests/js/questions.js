@@ -31,9 +31,9 @@ var quizQuestions = [
         answer: 'break statement'
     },
     {
-        question: "commonly used data types do NOT include",
-        choices: ['strings','booleons','alerts','numbers'],
-        answer: 'alerts'
+        question: "which database is listed as open source",
+        choices: ['SQL server','mysql','oracle','apache'],
+        answer: 'mysql'
     },
     {
         question: "any field declared with the keyword _____ is constant",
@@ -42,7 +42,7 @@ var quizQuestions = [
     },
     {
         question: "the condition of an IF/ELSE statement is enclosed in",
-        choices: ['curly braces', 'sing quotes', 'parenthesis', 'double quotes'],
+        choices: ['curly braces', 'single quotes', 'parenthesis', 'double quotes'],
         answer: 'parenthesis'
     },
 
