@@ -11,7 +11,7 @@ let currentQuestionIndex = 0;
 
 //timer variables
 var timerEl = document.getElementById("timer");
-var time = 60;
+var time = 80;
 var timerId;
 
 
@@ -30,8 +30,8 @@ function getQuestions() {
     var currentQuestion = quizQuestions[currentQuestionIndex];
 
     // display question
-    var questTitleEl = document.getElementById("quiz-qst");
-    questTitleEl.textContent = currentQuestion.question;
+    var questName = document.getElementById("quiz-qst");
+    questName.textContent = currentQuestion.question;
 
     // clear previous question choices
     choicesEl.innerHTML = "";
@@ -39,24 +39,24 @@ function getQuestions() {
     // loop over choices
     currentQuestion.choices.forEach((element, index) =>{
         // create new list element for each newly generated choices
-        var choiceNode = document.createElement("li");
-        choiceNode.setAttribute("id", "choices");
-        // choiceNode.setAttribute("value", choice);
+        var choiceOp = document.createElement("li");
+        choiceOp.setAttribute("id", "choices");
+       
 
-        choiceNode.textContent = index + 1 + ". " + element;
+        choiceOp.textContent = index + 1 + ". " + element;
 
         // event listner for answer choice
-        choiceNode.addEventListener("click", function () {
-            questionClick(quizQuestions, element)
+        choiceOp.addEventListener("click", function () {
+            choiceSelect(quizQuestions, element)
         });
 
         // display on the page and append to unordered list element
-        choicesEl.appendChild(choiceNode);
+        choicesEl.appendChild(choiceOp);
     });
 }
 
 // click on question answer either generate new question or end quiz if final question, and deduct time for answering wrong
-function questionClick(quizQuestions, answer) {
+function choiceSelect(quizQuestions, answer) {
     // check if user guessed wrong
     if ( answer !== quizQuestions[currentQuestionIndex].answer) {
         // penalize 10 seconds from time/score

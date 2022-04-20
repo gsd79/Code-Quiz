@@ -21,9 +21,9 @@ a {
   justify-content: space-between;
 }
 
-#game-intro {
+#game-intro, #game-body, #score-body {
   width: 60%;
-  height: 500px;
+  
   margin: 0 auto;
   border: 6px double #9e4244;
   border-radius: 5px;
@@ -52,12 +52,11 @@ a {
   border-radius: 10px;
   border: none;
   color: white;
-}
-#game-body ol {
-  list-style-position: inside;
+  width:max-content
 }
 
 #game-body li {
+  list-style: none;
   font: 20px comfortaa;
   text-align: justify;
   background: #fe7d6a;
