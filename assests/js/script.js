@@ -1,7 +1,7 @@
 // DOM element variables
 var startEl = document.getElementById("start-btn");
 var saveEl = document.getElementById("svscore-btn");
-var restartEl = document.getElementById("restart-btn");
+// var restartEl = document.getElementById("restart-btn");
 var gameIntro = document.getElementById("game-intro");
 var gameBody = document.getElementById("game-body");
 var scoreBody = document.getElementById("score-body");
@@ -124,11 +124,15 @@ function quizEnd() {
 }
 
 function scoreStorage() {
-
-}
+    //set score and initials to localstorage
+    
+    localStorage.setItem(initialsEl.value, time)
+    
+    }
+    
 
 
 
 startEl.addEventListener("click", quizStart);
 saveEl.addEventListener("click", scoreStorage);
-restartEl.addEventListener("click", quizStart);
+// restartEl.addEventListener("click", quizStart);
