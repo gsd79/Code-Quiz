@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Coding Quiz Extravaganza</title>
+    <title> coding quiz extravaganza</title>
     <link rel="stylesheet" href="./assests/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="game-hud">
-        <a href="">view high scores</a> <div id="timer">Time:</div>
+        <a href="">view high scores</a> <div id="timer">time:</div>
     </header>
     <main> <!--landing page html-->
-        <div class="game-intro">
+        <div id="game-intro" class="show">
             <h1>Coding Quiz Extravaganza</h1>
-            <P>Race against the clock to test your knowledge of fundamental coding trivia. Challenge your friends or even yourself</P>
+            <P>Race against the clock to test your knowledge of fundamental coding trivia. Challenge your friends or even yourself.</P>
             <button class="btn" id="start-btn">Click Here To Play</button>
         </div>
         <!--quiz html-->
-        <div class="game-body">
-            <h1></h1>
-            <ol></ol>
+        <div id="game-body" class="hide">
+            <h1 id="quiz-qst"></h1>
+            <ul id="quiz-choices"></ul>
+            <div id="feedback"></div>
         </div>
     </main>
+    <script src="./assests/js/questions.js"></script>
     <script src="./assests/js/script.js"></script>
 </body>
 </html>

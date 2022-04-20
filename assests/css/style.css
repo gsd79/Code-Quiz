@@ -11,26 +11,31 @@ a {
   color: #e11584;
 }
 
+.hide{
+  display:none;
+}
+
 .game-hud {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.game-intro {
+#game-intro {
   width: 60%;
+  height: 500px;
   margin: 0 auto;
   border: 6px double #9e4244;
   border-radius: 5px;
 }
 
-.game-intro h1 {
+#game-intro h1 {
   font-weight: bold;
   text-align: center;
   font-size: 30px;
 }
 
-.game-intro p {
+#game-intro p {
   font-size: 20px;
   text-align: justify;
   width: 60%;
@@ -48,19 +53,17 @@ a {
   border: none;
   color: white;
 }
-.game-body ol {
+#game-body ol {
   list-style-position: inside;
 }
 
-.game-body li {
+#game-body li {
   font: 20px comfortaa;
   text-align: justify;
   background: #fe7d6a;
   border-radius: 10px;
   color: white;
-  width: intrinsic; /* Safari/WebKit  */
-  width: -moz-max-content; /* Firefox/Gecko */
-  width: -webkit-max-content; /* Chrome */
   width: max-content;
+  margin: 5px 0px;
 }
 
